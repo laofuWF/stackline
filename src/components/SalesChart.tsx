@@ -75,7 +75,7 @@ const SalesChart: React.FC<SalesChartProps> = ({ sales }) => {
         display: false,
       },
       tooltip: {
-        mode: 'index',
+        mode: 'index' as const,
         intersect: false,
         callbacks: {
           title: (context: any) => {
